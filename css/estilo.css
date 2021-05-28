@@ -133,7 +133,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 12px;
   grid-row-gap: 20px;
-  justify-items: stretch;
+  justify-items: center;
   align-items: stretch;
   margin: 50px; }
 
@@ -239,7 +239,7 @@ ul li {
 
 /* efecto al pasar el ratón por los items del menu */
 ul li:hover {
-  border-left: 1px solid coral;
+  border-bottom: 1px solid coral;
   color: #80471c;
   text-decoration: none;
   font-weight: normal; }
@@ -286,6 +286,10 @@ ul li:hover > ul {
 
   nav{
     font-size: 0.5rem;
+  }
+
+  .redes{
+    margin-top: 15px;
   }
   .secgaleria {
     display: grid;
