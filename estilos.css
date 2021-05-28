@@ -1,24 +1,3 @@
-
-/*variables*/
-
-$elmarron: #80471c;
-$elclarito: #F8FEBE;
-
-/*mixins*/
-
-@mixin titulorecuadro {
-  font-size: 1.8rem;
-	color: $elmarron;
-	border: solid 1px $elmarron;
-	padding: 20px;
-	margin: 10px;
-	text-align: center;  
-  font-family: 'josefin slab' serif;
-  
-  ;
-}
-
-
 /*generales*/ 
 
 * {
@@ -27,45 +6,54 @@ $elclarito: #F8FEBE;
 	border: 0;
 }
 
-
 body {
 	text-align: left;
 	font-family: 'barlow', sans-serif;
-	background-image: url(../multimedia/ImagenesH/fondo.jpg);
+	background-image: url(Imagenesh/fondo.jpg);
 	text-align: left;
 }
 
 header {
-	background-color: white;
+	background-color: #F8FEBE;
 	margin-top: 10px;
-	border-top: solid 3px $elmarron;
-	border-bottom: solid 3px $elmarron;
-	;
+	border-top: solid 3px #80471c;
+	border-bottom: solid 3px #80471c;
+	background: white;
 }
 
-html {
-	scroll-behavior: smooth;
-}
+
 
 h1 {
-	font-size: 5rem;
+	font-size: 60pt;
 	font-family: 'Barlow', sans-serif;
 	font-weight: 400;
-	color: $elmarron;
+	color: #80471c;
 	letter-spacing: 1pt;
 	text-align: center;
 	margin-bottom: 0px;
 }
 
-
-
 h2 {
-@include titulorecuadro
+	font-size: 35pt;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 200;
+	color: #80471c;
+	text-align: center;
+	margin-top: 0px;
+}
+
+h3 {
+	font-size: 15pt;
+	color: maroon;
+	border: solid 1px maroon;
+	padding: 20px;
+	margin: 30px;
+	text-align: center;
 }
 
 h4 {
 	font-size: 15pt;
-	color: $elmarron;
+	color: maroon;
 	padding: 20px;
 	margin: 30px;
 	text-align: center;
@@ -80,7 +68,7 @@ article {
 }
 
 ul.menutortas li {
-	font-weight: normal;
+	font-weight: bold;
 }
 
 input {
@@ -94,7 +82,7 @@ select {
 }
 
 form {
-	
+	border: solid 1px coral;
 	margin-left: 45px;
 	margin-right: 45px;
 }
@@ -105,26 +93,13 @@ footer {
 	flex-wrap: wrap;
 
 	margin-top: 50px;
-	background-color: $elmarron;
-	color: $elclarito;
+	background-color: #80471c;
+	color: bisque;
 	
 	padding: 50px;
 }
 
 /*clases*/
-
-.tituloPasteleria{
-	font-size: 30pt;
-	font-family: 'Barlow', sans-serif;
-	font-weight: 200;
-	color: $elmarron;
-	text-align: center;
-	margin-top: 0px;
-}
-
-.imagenPortada{
-	width: 100%;
-}
 
 .empresa {
 	border: solid 1px coral;
@@ -134,12 +109,11 @@ footer {
 .mainEmpresa {
 	display: flex;
 	flex-direction: row;
-	margin: 50px;
+	margin: 30px;
 }
 
 .parrafoEmpresa {
 	margin-bottom: 30px;
-	margin-left: 60px;
 	justify-content: center;
 	align-items: center;
 	font-size: 20px;
@@ -148,6 +122,15 @@ footer {
 
 
 
+.parrafoRegalo {
+	padding: 30px;
+	margin: 40px;
+}
+
+.divRegalo {
+	display: flex;
+	flex-flow: row wrap;
+}
 
 .imagenEmpresa {
 	border-radius: 15px;
@@ -155,9 +138,9 @@ footer {
 }
 
 .imagenRedonda {
-	width: 300px;
-	height: auto;
-	border-radius: 50px;
+	width: 200px;
+	height: 200px;
+	border-radius: 150px;
 	border-style: solid 2pt;
 	border-color: gray;
 	justify-content: center;
@@ -173,17 +156,6 @@ footer {
 	border-collapse: collapse;
 	border-width: 1pt;
 }
-
-.grilla{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 12px;
-    grid-row-gap: 20px;
-    justify-items: stretch;
-    align-items: stretch;
-	margin: 50px;
- }
-
 
 .pf {
 	font-size: large;
@@ -204,7 +176,13 @@ footer {
 	align-items: center;
 }
 
-
+.videoIndex {
+	width: 75%;
+	margin-top: 50px;
+	margin-left: 50px;
+	height: auto;
+	border-radius: 30px;
+}
 
 .logo {
 	width: 100px;
@@ -214,17 +192,16 @@ footer {
 	margin-top: 10px;
 }
 
-
 .llenar {
 	border-bottom: solid 2px coral;
 }
 
 .boton {
-	border: $elmarron solid 1px;
+	border: #80471c solid 1px;
 	padding: 5px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	border-radius: 5px;
-	background-color: $elclarito;
+	background-color: #F8FEBE;
 }
 
 div.contact {
@@ -290,7 +267,7 @@ ul li {
 
 ul a {
 	display: block;
-	color: $elmarron;
+	color: #80471c;
 	text-decoration: none;
 	font: weight 400px;
 	font-size: 20px;
@@ -298,7 +275,6 @@ ul a {
 	font-family: 'Barlow', sans-serif;
 	text-align: center;
 	overflow: visible;
-  
 }
 
 
@@ -316,11 +292,8 @@ ul li {
 /* efecto al pasar el ratón por los items del menu */
 
 ul li:hover {
-	border-left: 1px solid coral;
-  color: $elmarron;
-	text-decoration: none;
-	font-weight: normal;
-	;
+	border-bottom: 1px solid coral;
+	font-weight: bolder;
 }
 
 
@@ -417,7 +390,6 @@ ul li:hover>ul {
   width: 300px;   
   height: 100px;
 }
-/*efecto en la direccion*/
 .direccion{
   width:auto;
   height: 100px;
@@ -427,10 +399,9 @@ ul li:hover>ul {
 }
 
 .direccion:hover{
-  border-left:  solid 1px $elclarito;
+  border-left:  solid 1px #F8FEBE;
   
 }
-/*efecto botones redes*/
 .icon{
   margin: 10px;
   padding: 15px;
@@ -438,7 +409,7 @@ ul li:hover>ul {
   
 }
 .icon:hover{
-  border-left:  solid 1px $elclarito;
+  border-left:  solid 1px #F8FEBE;
 
 }
 
