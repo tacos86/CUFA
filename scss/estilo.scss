@@ -1,0 +1,455 @@
+
+/*variables*/
+
+$elmarron: #80471c;
+$elclarito: #F8FEBE;
+
+/*mixins*/
+
+@mixin titulorecuadro {
+  font-size: 1.8rem;
+	color: $elmarron;
+	border: solid 1px $elmarron;
+	padding: 20px;
+	margin: 10px;
+	text-align: center;  
+  font-family: 'josefin slab' serif;
+  
+  ;
+}
+
+
+/*generales*/ 
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+body {
+	text-align: left;
+	font-family: 'barlow', sans-serif;
+	background-image: url(../multimedia/ImagenesH/fondo.jpg);
+	text-align: left;
+}
+
+header {
+	background-color: white;
+	margin-top: 10px;
+	border-top: solid 3px $elmarron;
+	border-bottom: solid 3px $elmarron;
+	;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 5rem;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 400;
+	color: $elmarron;
+	letter-spacing: 1pt;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+
+
+h2 {
+@include titulorecuadro
+}
+
+h4 {
+	font-size: 15pt;
+	color: $elmarron;
+	padding: 20px;
+	margin: 30px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+article {
+	border: solid 1px coral;
+	margin: 40px;
+	border-radius: 15px;
+	background-color: cornsilk;
+}
+
+ul.menutortas li {
+	font-weight: normal;
+}
+
+input {
+	padding: 10px;
+	margin: 10px;
+}
+
+select {
+	padding: 10px;
+	margin: 10px;
+}
+
+form {
+	
+	margin-left: 45px;
+	margin-right: 45px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	margin-top: 50px;
+	background-color: $elmarron;
+	color: $elclarito;
+	
+	padding: 50px;
+}
+
+/*clases*/
+
+.tituloPasteleria{
+	font-size: 30pt;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 200;
+	color: $elmarron;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.imagenPortada{
+	width: 100%;
+}
+
+.empresa {
+	border: solid 1px coral;
+	margin: 15px;
+}
+
+.mainEmpresa {
+	display: flex;
+	flex-direction: row;
+	margin: 50px;
+}
+
+.parrafoEmpresa {
+	margin-bottom: 30px;
+	margin-left: 60px;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	padding: 60px 30px 50px 30px;
+}
+
+
+
+
+.imagenEmpresa {
+	border-radius: 15px;
+	height: 400px;
+}
+
+.imagenRedonda {
+	width: 300px;
+	height: auto;
+	border-radius: 50px;
+	border-style: solid 2pt;
+	border-color: gray;
+	justify-content: center;
+	animation-name: efecto;
+	animation-duration: 1s;
+}
+
+.pie {
+	text-align: right;
+}
+
+.tabla {
+	border-collapse: collapse;
+	border-width: 1pt;
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+	margin: 50px;
+ }
+
+
+.pf {
+	font-size: large;
+	font-weight: bold;
+	background-color: lightpink;
+}
+
+#promo {
+	border: none;
+	font-size: 35pt;
+	text-align: left;
+	color: coral;
+}
+
+.divIndex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.logo {
+	width: 100px;
+	height: 100px;
+	float: left;
+	position: absolute;
+	margin-top: 10px;
+}
+
+
+.llenar {
+	border-bottom: solid 2px coral;
+}
+
+.boton {
+	border: $elmarron solid 1px;
+	padding: 5px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	border-radius: 5px;
+	background-color: $elclarito;
+}
+
+div.contact {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.secgaleria {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	margin: 20px;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+.fotoGaleria {
+	width: 300px;
+	height: 300px;
+	width: 100%;
+	border-radius: 30px;
+}
+
+section.fotoGaleria div img:hover {
+	border: solid 3px red;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+/* menu */
+
+nav {
+	padding: 30px;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+/* items del menu */
+
+ul li {
+	margin: 20px;
+}
+
+
+/* enlaces del menu */
+
+ul a {
+	display: block;
+	color: $elmarron;
+	text-decoration: none;
+	font: weight 400px;
+	font-size: 20px;
+	padding: 10px;
+	font-family: 'Barlow', sans-serif;
+	text-align: center;
+	overflow: visible;
+  
+}
+
+
+/* items del menu */
+
+ul li {
+	position: relative;
+	text-align: center;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* efecto al pasar el ratón por los items del menu */
+
+ul li:hover {
+	border-left: 1px solid coral;
+  color: $elmarron;
+	text-decoration: none;
+	font-weight: normal;
+	;
+}
+
+
+/* menu desplegable */
+
+ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: white;
+	padding: 0;
+}
+
+
+/* items del menu desplegable */
+
+ul ul li {
+	float: none;
+	width: 150px fit-content
+}
+
+
+/* enlaces de los items del menu desplegable */
+
+ul ul a {
+	line-height: 120%;
+	padding: 10px 15px;
+	font-size: 15px;
+}
+
+
+/* items del menu desplegable al pasar el ratón */
+
+ul li:hover>ul {
+	display: block;
+}
+
+
+/*media querys*/
+
+
+@media (max-width: 780px) {
+	.secgaleria {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		margin: 20px;
+		grid-column-gap: 5px;
+		grid-row-gap: 5px;
+	}
+	.logo {
+		display: none;
+	}
+}
+
+@media (max-width: 320px) {
+	body {
+		font-size: 12px;
+	}
+	.secgaleria {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		margin: 20px;
+		grid-column-gap: 5px;
+		grid-row-gap: 5px;
+	}
+	.fotoGaleria {
+		width: 150px;
+		height: 150px;
+	}
+	.logo {
+		display: none;
+	}
+}
+
+.fotter{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin-top: 35px;
+
+}
+.redes{
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;   
+  margin-right: 30px;
+  width: 300px;   
+  height: 100px;
+}
+/*efecto en la direccion*/
+.direccion{
+  width:auto;
+  height: 100px;
+  text-align: left;
+  margin-left: 40px;
+  padding-left: 10px;
+}
+
+.direccion:hover{
+  border-left:  solid 1px $elclarito;
+  
+}
+/*efecto botones redes*/
+.icon{
+  margin: 10px;
+  padding: 15px;
+  font-size: 30px;
+  
+}
+.icon:hover{
+  border-left:  solid 1px $elclarito;
+
+}
+
+
+
+/*animaciones*/
+@keyframes efecto {
+	50% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
