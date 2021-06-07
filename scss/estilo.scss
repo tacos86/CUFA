@@ -284,10 +284,14 @@ ul li:hover > ul {
 @media (max-width: 320px) {
   body {
     font-size: 12px; }
-  nav {
-    font-size: 0.5rem; }
-  .redes {
-    margin-top: 15px; }
+
+  nav{
+    font-size: 0.5rem;
+  }
+
+  .redes{
+    margin-top: 15px;
+  }
   .secgaleria {
     display: grid;
     grid-template-columns: 1fr 1fr;
